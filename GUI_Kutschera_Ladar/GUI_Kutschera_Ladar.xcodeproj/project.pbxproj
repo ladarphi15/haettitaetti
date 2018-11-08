@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		187AA12336DAC510E06C6610 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA23BB0AF4D261F7E363C /* SecondViewController.swift */; };
+		187AA493E2CB726B3752E871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187AAF0BC100B2F4C8CDCCF1 /* LaunchScreen.storyboard */; };
+		187AA533D8A71F8603D9FEDA /* CsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA79285A7FE7878A441BB /* CsvParser.swift */; };
+		187AA5CAE35FE4FA512BC5FA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AAC83CA6CEC76FBD13299 /* FirstViewController.swift */; };
+		187AA9581081E9C4CFC29F6A /* LottoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA25A19A2B6ACE96F74E8 /* LottoParser.swift */; };
+		187AA9B15FC8A4D386614DA2 /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AAED23944D7D29E3172F8 /* LoseViewController.swift */; };
+		187AAA3075CBCDFEED76DE8A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AAE620D5E948FE016DBD6 /* StringExtensions.swift */; };
+		187AAB558B65D72BA515EFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187AA64D73C107C793A5C965 /* Main.storyboard */; };
+		187AABCC17186FE7BD1A56F5 /* LottoDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA234EA4480DDF1C2B8E5 /* LottoDraw.swift */; };
+		187AAC5AD3E6D8D661C3C4F9 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA08737F0C5B69C8F1F83 /* WinViewController.swift */; };
 		443BAE9221930E230013E853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BAE9121930E230013E853 /* AppDelegate.swift */; };
-		443BAE9421930E230013E853 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BAE9321930E230013E853 /* FirstViewController.swift */; };
-		443BAE9621930E230013E853 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BAE9521930E230013E853 /* SecondViewController.swift */; };
-		443BAE9921930E230013E853 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443BAE9721930E230013E853 /* Main.storyboard */; };
 		443BAE9B21930E240013E853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443BAE9A21930E240013E853 /* Assets.xcassets */; };
-		443BAE9E21930E240013E853 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443BAE9C21930E240013E853 /* LaunchScreen.storyboard */; };
-		443BAEA8219322640013E853 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BAEA7219322640013E853 /* WinViewController.swift */; };
-		443BAEAA21932C4F0013E853 /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BAEA921932C4F0013E853 /* LoseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		187AA08737F0C5B69C8F1F83 /* WinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
+		187AA234EA4480DDF1C2B8E5 /* LottoDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottoDraw.swift; sourceTree = "<group>"; };
+		187AA23BB0AF4D261F7E363C /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		187AA25A19A2B6ACE96F74E8 /* LottoParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottoParser.swift; sourceTree = "<group>"; };
+		187AA64D73C107C793A5C965 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		187AA79285A7FE7878A441BB /* CsvParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CsvParser.swift; sourceTree = "<group>"; };
+		187AAC83CA6CEC76FBD13299 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		187AAE620D5E948FE016DBD6 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		187AAED23944D7D29E3172F8 /* LoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
+		187AAF0BC100B2F4C8CDCCF1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443BAE8E21930E230013E853 /* GUI_Kutschera_Ladar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GUI_Kutschera_Ladar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443BAE9121930E230013E853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		443BAE9321930E230013E853 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		443BAE9521930E230013E853 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		443BAE9821930E230013E853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		443BAE9A21930E240013E853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		443BAE9D21930E240013E853 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		443BAE9F21930E240013E853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		443BAEA7219322640013E853 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
-		443BAEA921932C4F0013E853 /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187AA0062F786C982C11850B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				187AA23BB0AF4D261F7E363C /* SecondViewController.swift */,
+				187AAC83CA6CEC76FBD13299 /* FirstViewController.swift */,
+				187AAED23944D7D29E3172F8 /* LoseViewController.swift */,
+				187AA08737F0C5B69C8F1F83 /* WinViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		187AA2372E1492ECB3E016D4 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				187AA79285A7FE7878A441BB /* CsvParser.swift */,
+				187AA25A19A2B6ACE96F74E8 /* LottoParser.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		187AA62295B47BC1D2F53609 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				187AA234EA4480DDF1C2B8E5 /* LottoDraw.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		187AA6BF9E6CCB803077499C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				187AAF0BC100B2F4C8CDCCF1 /* LaunchScreen.storyboard */,
+				187AA64D73C107C793A5C965 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		187AA8EF9B5BD0553B8C87DA /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				187AAE620D5E948FE016DBD6 /* StringExtensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		443BAE8521930E230013E853 = {
 			isa = PBXGroup;
 			children = (
@@ -61,14 +114,13 @@
 			isa = PBXGroup;
 			children = (
 				443BAE9121930E230013E853 /* AppDelegate.swift */,
-				443BAE9321930E230013E853 /* FirstViewController.swift */,
-				443BAE9521930E230013E853 /* SecondViewController.swift */,
-				443BAE9721930E230013E853 /* Main.storyboard */,
 				443BAE9A21930E240013E853 /* Assets.xcassets */,
-				443BAE9C21930E240013E853 /* LaunchScreen.storyboard */,
 				443BAE9F21930E240013E853 /* Info.plist */,
-				443BAEA921932C4F0013E853 /* LoseViewController.swift */,
-				443BAEA7219322640013E853 /* WinViewController.swift */,
+				187AA6BF9E6CCB803077499C /* view */,
+				187AA0062F786C982C11850B /* controller */,
+				187AA2372E1492ECB3E016D4 /* util */,
+				187AA62295B47BC1D2F53609 /* model */,
+				187AA8EF9B5BD0553B8C87DA /* extensions */,
 			);
 			path = GUI_Kutschera_Ladar;
 			sourceTree = "<group>";
@@ -131,9 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443BAE9E21930E240013E853 /* LaunchScreen.storyboard in Resources */,
 				443BAE9B21930E240013E853 /* Assets.xcassets in Resources */,
-				443BAE9921930E230013E853 /* Main.storyboard in Resources */,
+				187AA493E2CB726B3752E871 /* LaunchScreen.storyboard in Resources */,
+				187AAB558B65D72BA515EFA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,34 +196,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443BAEAA21932C4F0013E853 /* LoseViewController.swift in Sources */,
-				443BAE9621930E230013E853 /* SecondViewController.swift in Sources */,
 				443BAE9221930E230013E853 /* AppDelegate.swift in Sources */,
-				443BAE9421930E230013E853 /* FirstViewController.swift in Sources */,
-				443BAEA8219322640013E853 /* WinViewController.swift in Sources */,
+				187AA12336DAC510E06C6610 /* SecondViewController.swift in Sources */,
+				187AA5CAE35FE4FA512BC5FA /* FirstViewController.swift in Sources */,
+				187AA9B15FC8A4D386614DA2 /* LoseViewController.swift in Sources */,
+				187AAC5AD3E6D8D661C3C4F9 /* WinViewController.swift in Sources */,
+				187AA533D8A71F8603D9FEDA /* CsvParser.swift in Sources */,
+				187AA9581081E9C4CFC29F6A /* LottoParser.swift in Sources */,
+				187AABCC17186FE7BD1A56F5 /* LottoDraw.swift in Sources */,
+				187AAA3075CBCDFEED76DE8A /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		443BAE9721930E230013E853 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				443BAE9821930E230013E853 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		443BAE9C21930E240013E853 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				443BAE9D21930E240013E853 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		443BAEA021930E240013E853 /* Debug */ = {
@@ -300,7 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hattitatti.GUI-Kutschera-Ladar";
+				PRODUCT_BUNDLE_IDENTIFIER = at.fhj.ims17.t03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +354,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hattitatti.GUI-Kutschera-Ladar";
+				PRODUCT_BUNDLE_IDENTIFIER = at.fhj.ims17.t03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

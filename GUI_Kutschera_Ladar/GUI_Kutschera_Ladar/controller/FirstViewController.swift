@@ -21,17 +21,20 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
   func loadCSVs() {
     // DispatchQueue
-    let url = URL(string: "https://www.win2day.at/download/lo_1998.csv")!
-    DispatchQueue.global(qos: .background).async { [weak self] () -> Void in
-      guard self == self else { return }
-      let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-        if error != nil {
-          print("there's a problem")
+    let startYear = 1986
+    for year in startYear...2017 {
+      DispatchQueue.global(qos: .background).async { [weak self] () -> Void in
+        guard self != nil else { return }
+        let url = URL(string: "https://www.win2day.at/download/lo_\(year).csv")!
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+          if error != nil {
+            print("there's a problem")
+          }
+          print("year ------------------------------------------------------------- \(year) --------------------------------------------")
+          print(String(data: data!, encoding: String.Encoding.ascii) ?? "")
         }
-        print("http request successful")
-        print(String(data: data!, encoding: String.Encoding.ascii) ?? "")
+        task.resume()
       }
-      task.resume()
     }
   }
   
