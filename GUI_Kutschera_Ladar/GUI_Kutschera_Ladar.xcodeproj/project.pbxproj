@@ -19,6 +19,10 @@
 		187AAC5AD3E6D8D661C3C4F9 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA08737F0C5B69C8F1F83 /* WinViewController.swift */; };
 		443BAE9221930E230013E853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BAE9121930E230013E853 /* AppDelegate.swift */; };
 		443BAE9B21930E240013E853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443BAE9A21930E240013E853 /* Assets.xcassets */; };
+		4471219621957A460026A951 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4471219521957A460026A951 /* CoreData.framework */; };
+		4471219921957A7D0026A951 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4471219721957A7D0026A951 /* Model.xcdatamodeld */; };
+		4471219B21957BB70026A951 /* LottoDrawExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4471219A21957BB70026A951 /* LottoDrawExtensions.swift */; };
+		4471219D21957CB90026A951 /* LottoDrawMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4471219C21957CB90026A951 /* LottoDrawMatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		443BAE9121930E230013E853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443BAE9A21930E240013E853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443BAE9F21930E240013E853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4471219521957A460026A951 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4471219821957A7D0026A951 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4471219A21957BB70026A951 /* LottoDrawExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoDrawExtensions.swift; sourceTree = "<group>"; };
+		4471219C21957CB90026A951 /* LottoDrawMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoDrawMatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4471219621957A460026A951 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				187AA234EA4480DDF1C2B8E5 /* LottoDraw.swift */,
+				4471219C21957CB90026A951 /* LottoDrawMatch.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -90,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				187AAE620D5E948FE016DBD6 /* StringExtensions.swift */,
+				4471219A21957BB70026A951 /* LottoDrawExtensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -99,6 +110,7 @@
 			children = (
 				443BAE9021930E230013E853 /* GUI_Kutschera_Ladar */,
 				443BAE8F21930E230013E853 /* Products */,
+				4471219421957A460026A951 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +133,17 @@
 				187AA2372E1492ECB3E016D4 /* util */,
 				187AA62295B47BC1D2F53609 /* model */,
 				187AA8EF9B5BD0553B8C87DA /* extensions */,
+				4471219721957A7D0026A951 /* Model.xcdatamodeld */,
 			);
 			path = GUI_Kutschera_Ladar;
+			sourceTree = "<group>";
+		};
+		4471219421957A460026A951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4471219521957A460026A951 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4471219D21957CB90026A951 /* LottoDrawMatch.swift in Sources */,
+				4471219B21957BB70026A951 /* LottoDrawExtensions.swift in Sources */,
 				443BAE9221930E230013E853 /* AppDelegate.swift in Sources */,
 				187AA12336DAC510E06C6610 /* SecondViewController.swift in Sources */,
 				187AA5CAE35FE4FA512BC5FA /* FirstViewController.swift in Sources */,
@@ -203,6 +226,7 @@
 				187AAC5AD3E6D8D661C3C4F9 /* WinViewController.swift in Sources */,
 				187AA533D8A71F8603D9FEDA /* CsvParser.swift in Sources */,
 				187AA9581081E9C4CFC29F6A /* LottoParser.swift in Sources */,
+				4471219921957A7D0026A951 /* Model.xcdatamodeld in Sources */,
 				187AABCC17186FE7BD1A56F5 /* LottoDraw.swift in Sources */,
 				187AAA3075CBCDFEED76DE8A /* StringExtensions.swift in Sources */,
 			);
@@ -383,6 +407,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4471219721957A7D0026A951 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4471219821957A7D0026A951 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4471219821957A7D0026A951 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 443BAE8621930E230013E853 /* Project object */;
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class WinViewController: UIViewController {
   
@@ -16,6 +17,29 @@ class WinViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.winNumberLabel.text = winNumbers
+    loadDraws()
+  }
+  
+  func loadDraws() {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let context = appDelegate.persistentContainer.viewContext
+    let request = NSFetchRequest<NSFetchRequestResult>(entityName: "LottoDrawEntity")
+    request.returnsObjectsAsFaults = false
+    do {
+      let result = try context.fetch(request)
+      for data in result as! [NSManagedObject] {
+        print(String(data.value(forKey: "number1") as! Int16))
+        print(String(data.value(forKey: "number2") as! Int16))
+        print(String(data.value(forKey: "number3") as! Int16))
+        print(String(data.value(forKey: "number4") as! Int16))
+        print(String(data.value(forKey: "number5") as! Int16))
+        print(String(data.value(forKey: "number6") as! Int16))
+      }
+      
+    } catch {
+      
+      print("Failed")
+    }
   }
   
   @IBAction func goBack(_ sender: Any) {

@@ -4,5 +4,5 @@
 //
 
 protocol LottoParser {
-  static func parse(_ data: String) -> [[String]]
+  static func parse(_ data: String) -> [String]
 }

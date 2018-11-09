@@ -4,15 +4,7 @@
 //
 
 class CsvParser: LottoParser {
-  static func parse(_ data: String) -> [[String]] {
-    let lines = data.split(separator: "\r\n", omittingEmptySubsequences: false)
-        .map{ substr -> String in
-          return String(substr)
-        };
-
-    let results = lines.map{ line -> Array<String> in
-      line.split(separator: ";", omittingEmptySubsequences: false).map{ substr -> String in return String(substr)}
-    }
-    return results
+  static func parse(_ data: String) -> [String] {
+      return data.split(separator: ";", omittingEmptySubsequences: false).map{ substr -> String in return String(substr)}
   }
 }

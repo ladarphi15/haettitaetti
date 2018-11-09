@@ -31,12 +31,26 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             print("there's a problem")
           }
           print("year ------------------------------------------------------------- \(year) --------------------------------------------")
-          print(String(data: data!, encoding: String.Encoding.ascii) ?? "")
+          let content = String(data: data!, encoding: String.Encoding.ascii)
+          content?.split(separator: "\r\n").forEach{ (line: Substring) in
+            let lineAsString = String(line)
+            let winNumbers = lineAsString.matches(for: "((([0-9]){1,2};){6})([Zz]){2}([.:])*;([0-9]){1,2};")
+            if winNumbers.count > 0 {
+              let dates = lineAsString.matches(for: "((([0-9]){1,2})\\.){2}")
+              if dates.count > 0 {
+                DispatchQueue.main.sync {
+                  convertCsvAndSaveToDB(csv: winNumbers[0])
+                }
+              }
+            }
+            return
+            }
         }
         task.resume()
       }
     }
   }
+  
   
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return 6

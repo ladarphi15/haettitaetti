@@ -3,63 +3,29 @@
 // Copyright (c) 2018 hattitatti. All rights reserved.
 //
 
+import CoreData
+import UIKit
+
 enum LottoDrawException: Error {
   case invalidArguments
 }
 
 class LottoDraw {
-  var number1: Int
-  var number2: Int
-  var number3: Int
-  var number4: Int
-  var number5: Int
-  var number6: Int
-
-  init(_ number1: Int,
-       _ number2: Int,
-       _ number3: Int,
-       _ number4: Int,
-       _ number5: Int,
-       _ number6: Int) throws {
-
-    self.number1 = number1
-    guard number1 <= 45 && number1 >= 1 else {
-      throw LottoDrawException.invalidArguments
-    }
-
-    self.number2 = number2
-    guard number2 <= 45 && number2 >= 1 else {
-      throw LottoDrawException.invalidArguments
-    }
-
-    self.number3 = number3
-    guard number3 <= 45 && number3 >= 1 else {
-      throw LottoDrawException.invalidArguments
-    }
-
-    self.number4 = number4
-    guard number4 <= 45 && number4 >= 1 else {
-      throw LottoDrawException.invalidArguments
-    }
-
-    self.number5 = number5
-    guard number5 <= 45 && number5 >= 1 else {
-      throw LottoDrawException.invalidArguments
-    }
-
-    self.number6 = number6
-    guard number6 <= 45 && number6 >= 1 else {
-      throw LottoDrawException.invalidArguments
-    }
-
-  }
+  var numbers: Array<Int>?
+  init(){}
 }
 
-func ==(left: LottoDraw, right: LottoDraw) -> Bool {
-  return left.number1 == right.number1
-      && left.number2 == right.number2
-      && left.number3 == right.number3
-      && left.number4 == right.number4
-      && left.number5 == right.number5
-      && left.number6 == right.number6
+func convertCsvAndSaveToDB(csv: String) {
+  let appDelegate = UIApplication.shared.delegate as! AppDelegate
+  let context = appDelegate.persistentContainer.viewContext
+  let entity = NSEntityDescription.entity(forEntityName: "LottoDrawEntity", in: context)
+  let lottoDraw = NSManagedObject(entity: entity!, insertInto: context)
+  let parsedLottoDraw = csv.parseCsv()
+  lottoDraw.setValue(Int16(parsedLottoDraw[0])!, forKey: "number1")
+  lottoDraw.setValue(Int16(parsedLottoDraw[1])!, forKey: "number2")
+  lottoDraw.setValue(Int16(parsedLottoDraw[2])!, forKey: "number3")
+  lottoDraw.setValue(Int16(parsedLottoDraw[3])!, forKey: "number4")
+  lottoDraw.setValue(Int16(parsedLottoDraw[4])!, forKey: "number5")
+  lottoDraw.setValue(Int16(parsedLottoDraw[5])!, forKey: "number6")
+  lottoDraw.setValue(Int16(parsedLottoDraw[0])!, forKey: "numberZz")
 }
