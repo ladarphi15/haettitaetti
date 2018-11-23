@@ -7,14 +7,57 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, CLLocationManagerDelegate {
 
+  @IBOutlet weak var map: MKMapView!
+  let locationManager = CLLocationManager()
+  var latitude: String?
+  var longitude: String?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    getUserLocation()
+  }
+  
+  func getUserLocation() {
+    self.locationManager.requestWhenInUseAuthorization()
+    
+    if CLLocationManager.locationServicesEnabled() {
+      locationManager.delegate = self
+      locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+      locationManager.startUpdatingLocation()
+    }
+    
+    
   }
 
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+    print("locations = \(locValue.latitude) \(locValue.longitude)")
+    self.latitude = "\(locValue.latitude)"
+    self.longitude = "\(locValue.longitude)"
+    self.locationManager.stopUpdatingLocation()
+    getLotteries()
+  }
+  
+  func getLotteries() {
+    DispatchQueue.global(qos: .background).async { [weak self] () -> Void in
+      guard self != nil else { return }
+      let url = URL(string: "https://www.lotterien.at/api/geo/fetch?lat=\(self?.latitude ?? "50")&lng=\(self?.longitude ?? "50")&count=20")!
+      let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        if error != nil {
+          print("there's a problem")
+        }
+        print("Lotteries:")
+        let content = String(data: data!, encoding: String.Encoding.ascii)
+        print(content as? String)
+      }
+      task.resume()
+    }
+  }
 
 }
 

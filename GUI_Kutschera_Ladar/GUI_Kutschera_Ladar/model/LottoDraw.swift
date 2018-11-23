@@ -29,3 +29,5 @@ func convertCsvAndSaveToDB(csv: String) {
   lottoDraw.setValue(Int16(parsedLottoDraw[5])!, forKey: "number6")
   lottoDraw.setValue(Int16(parsedLottoDraw[0])!, forKey: "numberZz")
 }
+
+// TODO: guard function for lottodraw inputs
