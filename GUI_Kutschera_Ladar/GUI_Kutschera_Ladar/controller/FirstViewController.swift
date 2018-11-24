@@ -11,10 +11,14 @@ import UIKit
 class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
   @IBOutlet weak var pickerView: UIPickerView!
+  @IBOutlet weak var btHaetti: UIButton!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     pickerView.delegate = self
     pickerView.dataSource = self
+    btHaetti.layer.cornerRadius = 10
+    btHaetti.clipsToBounds = true
     
     loadCSVs()
   }
@@ -44,7 +48,7 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
               }
             }
             return
-            }
+          }
         }
         task.resume()
       }
@@ -61,13 +65,34 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
   }
   
   @IBAction func haetti(_ sender: Any) {
-    let randomNumber = Int(arc4random_uniform(UInt32(2)))
-    print(randomNumber)
-    if (randomNumber == 1) {
-      performSegue(withIdentifier: "winViewSegue", sender: sender)
-    } else {
-      performSegue(withIdentifier: "loseViewSegue", sender: sender)
-    }
+    UIView.animate(withDuration: 0.1,
+                   animations: {
+                    self.btHaetti.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+    }, completion: { _ in
+      UIView.animate(withDuration: 0.1,
+                     animations: {
+                      self.btHaetti.transform = CGAffineTransform.identity
+      }, completion: { _ in
+        UIView.animate(withDuration: 0.1,
+                       animations: {
+                        self.btHaetti.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }, completion: { _ in
+          UIView.animate(withDuration: 0.1,
+                         animations: {
+                          self.btHaetti.transform = CGAffineTransform.identity
+          }, completion: { _ in
+            let randomNumber = Int(arc4random_uniform(UInt32(2)))
+            print(randomNumber)
+            if (randomNumber == 1) {
+              self.performSegue(withIdentifier: "winViewSegue", sender: sender)
+            } else {
+              self.performSegue(withIdentifier: "loseViewSegue", sender: sender)
+            }
+          })
+        })
+      })
+    })
+    
   }
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

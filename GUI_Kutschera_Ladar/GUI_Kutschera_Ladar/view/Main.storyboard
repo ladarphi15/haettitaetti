@@ -23,7 +23,10 @@
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oos-T1-5F3">
                                 <rect key="frame" x="167" y="366" width="41" height="30"/>
+                                <color key="backgroundColor" red="0.20401176810264587" green="0.46907550096511841" blue="0.96479135751724243" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                 <state key="normal" title="Hätti?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -44,6 +47,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="btHaetti" destination="oos-T1-5F3" id="Dmb-Dc-Nmu"/>
                         <outlet property="pickerView" destination="hmv-pi-HZJ" id="1ym-Wc-zdK"/>
                         <segue destination="iaU-kd-955" kind="show" identifier="winViewSegue" id="Jey-Cf-HuB"/>
                         <segue destination="CyX-1p-xUh" kind="show" identifier="loseViewSegue" id="ObS-Lg-peP"/>
