@@ -19,8 +19,15 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     pickerView.dataSource = self
     btHaetti.layer.cornerRadius = 10
     btHaetti.clipsToBounds = true
+    self.becomeFirstResponder()
     
     loadCSVs()
+  }
+  
+  override var canBecomeFirstResponder: Bool {
+    get {
+      return true
+    }
   }
 
   func loadCSVs() {
@@ -62,6 +69,17 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
   
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
     return 45
+  }
+  
+  override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+    if motion == .motionShake {
+      
+      for componentIndex in 0...5 {
+        let randomNumber = Int(arc4random_uniform(UInt32(45))) + 1
+        self.pickerView.selectRow(randomNumber, inComponent: componentIndex, animated: true)
+      }
+      print("shake it")
+    }
   }
   
   @IBAction func haetti(_ sender: Any) {

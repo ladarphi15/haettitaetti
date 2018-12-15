@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AudioToolbox
 
 class WinViewController: UIViewController {
   
@@ -18,6 +19,7 @@ class WinViewController: UIViewController {
     super.viewDidLoad()
     self.winNumberLabel.text = winNumbers
     loadDraws()
+    AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
   }
   
   func loadDraws() {
