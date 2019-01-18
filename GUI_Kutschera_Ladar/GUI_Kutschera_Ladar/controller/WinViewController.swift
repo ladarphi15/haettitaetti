@@ -44,6 +44,16 @@ class WinViewController: UIViewController {
     }
   }
   
+  @IBAction func shareWinNumbers(_ sender: Any) {
+    let shareText = """
+                    Ich hätte am \(Date.init()) gewonen, tätti \(winNumbers) gespielt haben.
+                    Spiel doch auch: haettitaetti://\(winNumbers.replacingOccurrences(of: " ", with: "", options: .literal, range: nil))
+                    """
+    let activityViewController = UIActivityViewController(activityItems: [shareText as NSString], applicationActivities: nil)
+    
+    present(activityViewController, animated: true, completion: {})
+  }
+  
   @IBAction func goBack(_ sender: Any) {
     self.dismiss(animated: true)
   }

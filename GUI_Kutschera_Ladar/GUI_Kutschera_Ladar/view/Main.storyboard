@@ -96,18 +96,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C81-io-kil">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="tBk-4Z-RQQ">
+                                        <connections>
+                                            <action selector="shareWinNumbers:" destination="iaU-kd-955" id="neI-AF-Hni"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="r00-LP-06R" firstAttribute="top" secondItem="RYW-HH-3mI" secondAttribute="top" id="4z5-jR-Y7d"/>
+                            <constraint firstItem="C81-io-kil" firstAttribute="leading" secondItem="RYW-HH-3mI" secondAttribute="leading" id="6qj-DP-T4D"/>
                             <constraint firstItem="8gT-3g-KyD" firstAttribute="leading" secondItem="RYW-HH-3mI" secondAttribute="leading" constant="113" id="7NT-2c-53n"/>
                             <constraint firstItem="RYW-HH-3mI" firstAttribute="trailing" secondItem="yC2-1c-gLS" secondAttribute="trailing" constant="59" id="E2S-Th-4hy"/>
                             <constraint firstItem="r00-LP-06R" firstAttribute="leading" secondItem="rKb-Cn-Rc5" secondAttribute="leading" id="FRa-oJ-HS9"/>
+                            <constraint firstItem="RYW-HH-3mI" firstAttribute="bottom" secondItem="C81-io-kil" secondAttribute="bottom" id="KD6-Lq-U51"/>
                             <constraint firstItem="yC2-1c-gLS" firstAttribute="top" secondItem="r00-LP-06R" secondAttribute="bottom" constant="98" id="NOK-ed-Eho"/>
                             <constraint firstItem="yC2-1c-gLS" firstAttribute="leading" secondItem="RYW-HH-3mI" secondAttribute="leading" constant="58" id="Nt0-YL-nUu"/>
                             <constraint firstItem="RYW-HH-3mI" firstAttribute="trailing" secondItem="8gT-3g-KyD" secondAttribute="trailing" constant="111.5" id="WeK-Q6-DJg"/>
                             <constraint firstItem="RYW-HH-3mI" firstAttribute="trailing" secondItem="dl8-pk-LXL" secondAttribute="trailing" constant="59" id="X1U-nU-VER"/>
                             <constraint firstItem="dl8-pk-LXL" firstAttribute="top" secondItem="8gT-3g-KyD" secondAttribute="bottom" constant="21" id="ZX2-4y-Ade"/>
+                            <constraint firstItem="RYW-HH-3mI" firstAttribute="trailing" secondItem="C81-io-kil" secondAttribute="trailing" id="ddD-po-OeH"/>
                             <constraint firstItem="r00-LP-06R" firstAttribute="centerX" secondItem="yC2-1c-gLS" secondAttribute="centerX" id="gW0-mp-5sm"/>
                             <constraint firstItem="8gT-3g-KyD" firstAttribute="top" secondItem="yC2-1c-gLS" secondAttribute="bottom" constant="10" id="l6a-mX-cd9"/>
                             <constraint firstItem="RYW-HH-3mI" firstAttribute="leading" secondItem="dl8-pk-LXL" secondAttribute="leading" constant="-58" id="nNI-yy-Ps0"/>

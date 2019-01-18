@@ -53,7 +53,7 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
         }
         print("Lotteries:")
         let content = String(data: data!, encoding: String.Encoding.ascii)
-        print(content as? String)
+        print(content)
       }
       task.resume()
     }
