@@ -29,13 +29,10 @@ class WinViewController: UIViewController {
     request.returnsObjectsAsFaults = false
     do {
       let result = try context.fetch(request)
-      for data in result as! [NSManagedObject] {
-        print(String(data.value(forKey: "number1") as! Int16))
-        print(String(data.value(forKey: "number2") as! Int16))
-        print(String(data.value(forKey: "number3") as! Int16))
-        print(String(data.value(forKey: "number4") as! Int16))
-        print(String(data.value(forKey: "number5") as! Int16))
-        print(String(data.value(forKey: "number6") as! Int16))
+      for data in result as! [NSManagedObject] {		
+		for i in 1...6 {
+			print(String(data.value(forKey: "number"+i) as! Int16))
+		}
       }
       
     } catch {
