@@ -31,7 +31,7 @@ class WinViewController: UIViewController {
       let result = try context.fetch(request)
       for data in result as! [NSManagedObject] {		
 		for i in 1...6 {
-			print(String(data.value(forKey: "number"+i) as! Int16))
+			print(String(data.value(forKey: "number\(i)") as! Int16))
 		}
       }
       

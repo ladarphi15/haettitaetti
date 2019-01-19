@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    UIApplication.shared.setMinimumBackgroundFetchInterval(10)
     return true
+  }
+  
+  func application(_ application: UIApplication,
+                   performFetchWithCompletionHandler completionHandler:
+    @escaping (UIBackgroundFetchResult) -> Void) {
+    // Check for new data.
+    // if let newData = fetchUpdates() {
+    //  completionHandler(.newData)
+    //}
+    
+    notify()
+    completionHandler(.noData)
+  }
+  
+  private func notify() {
+    let center = UNUserNotificationCenter.current()
+    
+    center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+      if granted {
+        print("Yay!")
+      } else {
+        print("D'oh")
+      }
+    }
+    
+    let content = UNMutableNotificationContent()
+    content.title = "Title goes here"
+    content.body = "Main text goes here"
+    content.categoryIdentifier = "customIdentifier"
+    content.userInfo = ["customData": "fizzbuzz"]
+    content.sound = UNNotificationSound.default
+    
+    var dateComponents = DateComponents()
+    dateComponents.hour = 10
+    dateComponents.minute = 30
+    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+    
+    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+    center.add(request)
+  
   }
 
   func applicationWillResignActive(_ application: UIApplication) {
