@@ -20,11 +20,14 @@
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmv-pi-HZJ">
                                 <rect key="frame" x="16" y="53" width="343" height="216"/>
+                                <accessibility key="accessibilityConfiguration" identifier="numberPicker"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oos-T1-5F3">
-                                <rect key="frame" x="167" y="366" width="41" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oos-T1-5F3">
+                                <rect key="frame" x="145" y="338" width="85" height="62"/>
                                 <color key="backgroundColor" red="0.20401176810264587" green="0.46907550096511841" blue="0.96479135751724243" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <accessibility key="accessibilityConfiguration" identifier="haettiButton" label="Hätti?"/>
                                 <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Hätti?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,15 +40,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="hmv-pi-HZJ" secondAttribute="trailing" constant="16" id="4NR-AI-k6d"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="oos-T1-5F3" secondAttribute="trailing" constant="167" id="DaH-d6-EfT"/>
+                            <constraint firstItem="oos-T1-5F3" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="145" id="9Wm-wa-dk1"/>
                             <constraint firstItem="hmv-pi-HZJ" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="33" id="NWt-bs-ylU"/>
-                            <constraint firstItem="oos-T1-5F3" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="167" id="Vi9-P9-oye"/>
+                            <constraint firstItem="oos-T1-5F3" firstAttribute="top" secondItem="hmv-pi-HZJ" secondAttribute="bottom" constant="69" id="SCh-dz-llf"/>
                             <constraint firstItem="hmv-pi-HZJ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="aRf-li-6v6"/>
-                            <constraint firstItem="oos-T1-5F3" firstAttribute="top" secondItem="hmv-pi-HZJ" secondAttribute="bottom" constant="97" id="kRx-5V-Klr"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="oos-T1-5F3" secondAttribute="trailing" constant="145" id="wzw-jk-3hn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hätti" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Hätti" image="money_box" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="btHaetti" destination="oos-T1-5F3" id="Dmb-Dc-Nmu"/>
                         <outlet property="pickerView" destination="hmv-pi-HZJ" id="1ym-Wc-zdK"/>
@@ -80,6 +83,7 @@
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Du hast folgende Zahlen gezogen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC2-1c-gLS">
                                 <rect key="frame" x="58" y="162" width="258" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="winText"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -128,6 +132,7 @@
                         <viewLayoutGuide key="safeArea" id="RYW-HH-3mI"/>
                     </view>
                     <connections>
+                        <outlet property="otherInfo" destination="dl8-pk-LXL" id="4VJ-cu-H4H"/>
                         <outlet property="winNumberLabel" destination="8gT-3g-KyD" id="Pfi-sO-BOP"/>
                     </connections>
                 </viewController>
@@ -156,7 +161,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Lotterien" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Lotterien" image="define_location" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="map" destination="Avh-JL-hg2" id="c9V-GO-LMg"/>
                     </connections>
@@ -185,9 +190,8 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leider verloren :(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7H-fs-AAM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Leider verloren :(" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7H-fs-AAM">
                                 <rect key="frame" x="122" y="323" width="130" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -196,6 +200,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="U18-uD-6j4" firstAttribute="leading" secondItem="vW3-cZ-Xqz" secondAttribute="leading" id="Dbn-db-Oil"/>
+                            <constraint firstItem="q7H-fs-AAM" firstAttribute="centerX" secondItem="vW3-cZ-Xqz" secondAttribute="centerX" id="ECa-BW-dWj"/>
+                            <constraint firstItem="q7H-fs-AAM" firstAttribute="centerY" secondItem="vW3-cZ-Xqz" secondAttribute="centerY" id="Rl7-UH-ssk"/>
                             <constraint firstItem="U18-uD-6j4" firstAttribute="top" secondItem="vW3-cZ-Xqz" secondAttribute="top" id="eQ0-bR-gNE"/>
                             <constraint firstItem="vW3-cZ-Xqz" firstAttribute="trailing" secondItem="U18-uD-6j4" secondAttribute="trailing" id="f2t-r2-lqo"/>
                         </constraints>
@@ -226,7 +232,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="define_location" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="money_box" width="30" height="30"/>
     </resources>
 </document>

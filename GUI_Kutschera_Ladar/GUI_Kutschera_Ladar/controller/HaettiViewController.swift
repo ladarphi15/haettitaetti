@@ -12,6 +12,8 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
 
   @IBOutlet weak var pickerView: UIPickerView!
   @IBOutlet weak var btHaetti: UIButton!
+  var chosenDraw: LottoDraw? = nil
+  var numberOfMatches = 0
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -70,11 +72,15 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
             let winNumbers = lineAsString.matches(for: "((([0-9]){1,2};){6})([Zz]){2}([.:])*;([0-9]){1,2};")
             if winNumbers.count > 0 {
               let dates = lineAsString.matches(for: "((([0-9]){1,2})\\.){2}")
+              var winAmount = lineAsString.matches(for: "((à;)|(JP([0-9])*;;))( *)([0-9.,])*;")
+              if (winAmount.isEmpty) {
+                winAmount = [""]
+              }
               if dates.count > 0 {
                 let date = "\(dates[0])\(year)".toDate()
                 if (date > from) {
                   DispatchQueue.main.sync {
-                    convertCsvAndSaveToDB(csv: winNumbers[0], date: date)
+                    convertCsvAndSaveToDB(csv: winNumbers[0], date: date, amount: winAmount[0])
                   }
                 }
               }
@@ -85,23 +91,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         task.resume()
       }
     }
-  }
-
-  func convertDateToString(_ date: Date) -> String {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "dd.mm.yyyy"
-    let newDate = dateFormatter.string(from: date)
-    return newDate
-  }
-
-  func convertStringToDate(dateAsString: String) -> Date {
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "dd.mm.yyyy"
-    dateFormatter.timeZone = TimeZone(abbreviation: "GMT+0:00")
-    guard let date = dateFormatter.date(from: dateAsString) else {
-      fatalError()
-    }
-    return date
   }
 
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -119,7 +108,6 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         let randomNumber = Int(arc4random_uniform(UInt32(45))) + 1
         self.pickerView.selectRow(randomNumber, inComponent: componentIndex, animated: true)
       }
-      print("shake it")
     }
   }
 
@@ -154,10 +142,27 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
       chosenNumbers.append(Int16(pickerView.selectedRow(inComponent: i) + 1))
     }
     chosenNumbers.sort()
+
+    self.numberOfMatches = 0
     allDraws.forEach { draw in
       if (draw.numbers == chosenNumbers) {
+        self.chosenDraw = draw
+        self.numberOfMatches = 6
         self.performSegue(withIdentifier: "winViewSegue", sender: sender)
+        return
       }
+      let filteredDraw: Int = draw.numbers?.filter {
+        chosenNumbers.contains($0)
+      }.count ?? 0
+      if (filteredDraw == 5 || filteredDraw == 4 && self.numberOfMatches < filteredDraw) {
+        self.chosenDraw = draw
+        self.numberOfMatches = filteredDraw
+      }
+    }
+
+    if (numberOfMatches != 0) {
+      self.performSegue(withIdentifier: "winViewSegue", sender: sender)
+      return
     }
     self.performSegue(withIdentifier: "loseViewSegue", sender: sender)
   }
@@ -173,6 +178,8 @@ class FirstViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
       let number6 = pickerView.selectedRow(inComponent: 5) + 1
       let winNumbers = "\(number1) \(number2) \(number3) \(number4) \(number5) \(number6)"
       winView.winNumbers = winNumbers
+      winView.draw = self.chosenDraw
+      winView.numberOfMatches = self.numberOfMatches
     }
   }
 

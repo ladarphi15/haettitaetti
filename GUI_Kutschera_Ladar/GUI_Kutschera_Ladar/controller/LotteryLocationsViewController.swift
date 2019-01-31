@@ -67,7 +67,6 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
         if error != nil {
           print("there's a problem")
         }
-        print("Lotteries:")
         do {
           let content = String(data: data!, encoding: String.Encoding.ascii)
           let lotteryLocation = try JSONDecoder().decode([LotteryLocation].self, from: content!.data(using: .utf8)!)
@@ -75,7 +74,6 @@ class SecondViewController: UIViewController, CLLocationManagerDelegate {
             CLLocation(latitude: location.position.latitude, longitude: location.position.longitude)
           }
           self?.addAnnotations(coords: locations)
-          print("Lottery locations: \n \(lotteryLocation)")
         } catch let parseError as NSError {
           print("JSON Error \(parseError.localizedDescription)")
         }

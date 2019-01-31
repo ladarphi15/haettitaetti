@@ -21,4 +21,11 @@ extension Date {
     let calendar = Calendar.current
     return calendar.component(.month, from: self)
   }
+
+  func toString() -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "dd.mm.yyyy"
+    let newDate = dateFormatter.string(from: self)
+    return newDate
+  }
 }

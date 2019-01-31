@@ -27,7 +27,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4450FFE92203ACDC001D5DF9"
+               BuildableName = "GUI_Kutschera_LadarUITests.xctest"
+               BlueprintName = "GUI_Kutschera_LadarUITests"
+               ReferencedContainer = "container:GUI_Kutschera_Ladar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4450FFF72203B59D001D5DF9"
+               BuildableName = "GUI_Kutschera_LadarTests.xctest"
+               BlueprintName = "GUI_Kutschera_LadarTests"
+               ReferencedContainer = "container:GUI_Kutschera_Ladar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "443BAE8D21930E230013E853"
+            BuildableName = "GUI_Kutschera_Ladar.app"
+            BlueprintName = "GUI_Kutschera_Ladar"
+            ReferencedContainer = "container:GUI_Kutschera_Ladar.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,6 +93,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "443BAE8D21930E230013E853"
+            BuildableName = "GUI_Kutschera_Ladar.app"
+            BlueprintName = "GUI_Kutschera_Ladar"
+            ReferencedContainer = "container:GUI_Kutschera_Ladar.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

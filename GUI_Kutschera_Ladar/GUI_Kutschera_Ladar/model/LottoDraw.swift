@@ -14,18 +14,20 @@ class LottoDraw {
   var date: Date
   var numbers: Array<Int16>?
   var zz: Int16
+  var amount: String
 
-  init(date: Date, numbers: Array<Int16>, zz: Int16) {
+  init(date: Date, numbers: Array<Int16>, zz: Int16, amount: String) {
     self.date = date
     self.numbers = numbers
     self.zz = zz
+    self.amount = amount
   }
 }
 
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
 let context = appDelegate.persistentContainer.viewContext
 
-func convertCsvAndSaveToDB(csv: String, date: Date) {
+func convertCsvAndSaveToDB(csv: String, date: Date, amount: String) {
   let entity = NSEntityDescription.entity(forEntityName: "LottoDrawEntity", in: context)
   let lottoDraw = NSManagedObject(entity: entity!, insertInto: context)
   let parsedLottoDraw = csv.parseCsv()
@@ -37,6 +39,7 @@ func convertCsvAndSaveToDB(csv: String, date: Date) {
     try lottoDraw.setValue(convertStringToLottoNumber(parsedLottoDraw[4]), forKey: "number5")
     try lottoDraw.setValue(convertStringToLottoNumber(parsedLottoDraw[5]), forKey: "number6")
     try lottoDraw.setValue(convertStringToLottoNumber(parsedLottoDraw[7]), forKey: "numberZz")
+    lottoDraw.setValue(amount, forKey: "amount")
     lottoDraw.setValue(date, forKey: "date")
   } catch LottoDrawException.invalidArguments {
     print("Cannot convert the lotto draw number. Something went wrong!")
@@ -67,7 +70,8 @@ func getLottoDraws() -> [LottoDraw] {
       draws.append(data.value(forKey: "number6") as? Int16 ?? 0)
       let zz = data.value(forKey: "numberZz") as? Int16 ?? 0
       let date = data.value(forKey: "date") as! Date
-      allDraws.append(LottoDraw(date: date, numbers: draws, zz: zz))
+      let amount = data.value(forKey: "amount") as? String ?? ""
+      allDraws.append(LottoDraw(date: date, numbers: draws, zz: zz, amount: amount))
     }
   } catch {
     print("Failed")

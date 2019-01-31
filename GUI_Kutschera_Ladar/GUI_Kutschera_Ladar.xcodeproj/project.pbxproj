@@ -21,11 +21,30 @@
 		443BAE9221930E230013E853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BAE9121930E230013E853 /* AppDelegate.swift */; };
 		443BAE9B21930E240013E853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443BAE9A21930E240013E853 /* Assets.xcassets */; };
 		4450FFE521FFB510001D5DF9 /* ReceivingOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450FFE421FFB510001D5DF9 /* ReceivingOffice.swift */; };
+		4450FFED2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450FFEC2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests.swift */; };
+		4450FFFB2203B59D001D5DF9 /* GUI_Kutschera_LadarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450FFFA2203B59D001D5DF9 /* GUI_Kutschera_LadarTests.swift */; };
 		4471219621957A460026A951 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4471219521957A460026A951 /* CoreData.framework */; };
 		4471219921957A7D0026A951 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4471219721957A7D0026A951 /* Model.xcdatamodeld */; };
 		4471219B21957BB70026A951 /* LottoDrawExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4471219A21957BB70026A951 /* LottoDrawExtensions.swift */; };
 		4471219D21957CB90026A951 /* LottoDrawMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4471219C21957CB90026A951 /* LottoDrawMatch.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4450FFEF2203ACDC001D5DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443BAE8621930E230013E853 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443BAE8D21930E230013E853;
+			remoteInfo = GUI_Kutschera_Ladar;
+		};
+		4450FFFD2203B59D001D5DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 443BAE8621930E230013E853 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 443BAE8D21930E230013E853;
+			remoteInfo = GUI_Kutschera_Ladar;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		187AA08737F0C5B69C8F1F83 /* WinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +63,12 @@
 		443BAE9A21930E240013E853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443BAE9F21930E240013E853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4450FFE421FFB510001D5DF9 /* ReceivingOffice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivingOffice.swift; sourceTree = "<group>"; };
+		4450FFEA2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GUI_Kutschera_LadarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4450FFEC2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUI_Kutschera_LadarUITests.swift; sourceTree = "<group>"; };
+		4450FFEE2203ACDC001D5DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4450FFF82203B59D001D5DF9 /* GUI_Kutschera_LadarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GUI_Kutschera_LadarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4450FFFA2203B59D001D5DF9 /* GUI_Kutschera_LadarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GUI_Kutschera_LadarTests.swift; sourceTree = "<group>"; };
+		4450FFFC2203B59D001D5DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4471219521957A460026A951 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4471219821957A7D0026A951 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4471219A21957BB70026A951 /* LottoDrawExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoDrawExtensions.swift; sourceTree = "<group>"; };
@@ -57,6 +82,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				4471219621957A460026A951 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4450FFE72203ACDC001D5DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4450FFF52203B59D001D5DF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +156,8 @@
 			children = (
 				44BA35D321A8891A0005C199 /* something.gpx */,
 				443BAE9021930E230013E853 /* GUI_Kutschera_Ladar */,
+				4450FFEB2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests */,
+				4450FFF92203B59D001D5DF9 /* GUI_Kutschera_LadarTests */,
 				443BAE8F21930E230013E853 /* Products */,
 				4471219421957A460026A951 /* Frameworks */,
 			);
@@ -126,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				443BAE8E21930E230013E853 /* GUI_Kutschera_Ladar.app */,
+				4450FFEA2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests.xctest */,
+				4450FFF82203B59D001D5DF9 /* GUI_Kutschera_LadarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +187,24 @@
 				4471219721957A7D0026A951 /* Model.xcdatamodeld */,
 			);
 			path = GUI_Kutschera_Ladar;
+			sourceTree = "<group>";
+		};
+		4450FFEB2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4450FFEC2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests.swift */,
+				4450FFEE2203ACDC001D5DF9 /* Info.plist */,
+			);
+			path = GUI_Kutschera_LadarUITests;
+			sourceTree = "<group>";
+		};
+		4450FFF92203B59D001D5DF9 /* GUI_Kutschera_LadarTests */ = {
+			isa = PBXGroup;
+			children = (
+				4450FFFA2203B59D001D5DF9 /* GUI_Kutschera_LadarTests.swift */,
+				4450FFFC2203B59D001D5DF9 /* Info.plist */,
+			);
+			path = GUI_Kutschera_LadarTests;
 			sourceTree = "<group>";
 		};
 		4471219421957A460026A951 /* Frameworks */ = {
@@ -174,6 +235,42 @@
 			productReference = 443BAE8E21930E230013E853 /* GUI_Kutschera_Ladar.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4450FFE92203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4450FFF32203ACDC001D5DF9 /* Build configuration list for PBXNativeTarget "GUI_Kutschera_LadarUITests" */;
+			buildPhases = (
+				4450FFE62203ACDC001D5DF9 /* Sources */,
+				4450FFE72203ACDC001D5DF9 /* Frameworks */,
+				4450FFE82203ACDC001D5DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4450FFF02203ACDC001D5DF9 /* PBXTargetDependency */,
+			);
+			name = GUI_Kutschera_LadarUITests;
+			productName = GUI_Kutschera_LadarUITests;
+			productReference = 4450FFEA2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4450FFF72203B59D001D5DF9 /* GUI_Kutschera_LadarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4450FFFF2203B59D001D5DF9 /* Build configuration list for PBXNativeTarget "GUI_Kutschera_LadarTests" */;
+			buildPhases = (
+				4450FFF42203B59D001D5DF9 /* Sources */,
+				4450FFF52203B59D001D5DF9 /* Frameworks */,
+				4450FFF62203B59D001D5DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4450FFFE2203B59D001D5DF9 /* PBXTargetDependency */,
+			);
+			name = GUI_Kutschera_LadarTests;
+			productName = GUI_Kutschera_LadarTests;
+			productReference = 4450FFF82203B59D001D5DF9 /* GUI_Kutschera_LadarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -186,6 +283,14 @@
 				TargetAttributes = {
 					443BAE8D21930E230013E853 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					4450FFE92203ACDC001D5DF9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 443BAE8D21930E230013E853;
+					};
+					4450FFF72203B59D001D5DF9 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 443BAE8D21930E230013E853;
 					};
 				};
 			};
@@ -203,6 +308,8 @@
 			projectRoot = "";
 			targets = (
 				443BAE8D21930E230013E853 /* GUI_Kutschera_Ladar */,
+				4450FFE92203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests */,
+				4450FFF72203B59D001D5DF9 /* GUI_Kutschera_LadarTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,6 +322,20 @@
 				443BAE9B21930E240013E853 /* Assets.xcassets in Resources */,
 				187AA493E2CB726B3752E871 /* LaunchScreen.storyboard in Resources */,
 				187AAB558B65D72BA515EFA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4450FFE82203ACDC001D5DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4450FFF62203B59D001D5DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +363,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4450FFE62203ACDC001D5DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4450FFED2203ACDC001D5DF9 /* GUI_Kutschera_LadarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4450FFF42203B59D001D5DF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4450FFFB2203B59D001D5DF9 /* GUI_Kutschera_LadarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4450FFF02203ACDC001D5DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 443BAE8D21930E230013E853 /* GUI_Kutschera_Ladar */;
+			targetProxy = 4450FFEF2203ACDC001D5DF9 /* PBXContainerItemProxy */;
+		};
+		4450FFFE2203B59D001D5DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 443BAE8D21930E230013E853 /* GUI_Kutschera_Ladar */;
+			targetProxy = 4450FFFD2203B59D001D5DF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		443BAEA021930E240013E853 /* Debug */ = {
@@ -397,6 +547,80 @@
 			};
 			name = Release;
 		};
+		445000002203B59D001D5DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GUI_Kutschera_LadarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edi.GUI-Kutschera-LadarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GUI_Kutschera_Ladar.app/GUI_Kutschera_Ladar";
+			};
+			name = Debug;
+		};
+		445000012203B59D001D5DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GUI_Kutschera_LadarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edi.GUI-Kutschera-LadarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GUI_Kutschera_Ladar.app/GUI_Kutschera_Ladar";
+			};
+			name = Release;
+		};
+		4450FFF12203ACDC001D5DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GUI_Kutschera_LadarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edi.GUI-Kutschera-LadarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GUI_Kutschera_Ladar;
+			};
+			name = Debug;
+		};
+		4450FFF22203ACDC001D5DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GUI_Kutschera_LadarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edi.GUI-Kutschera-LadarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GUI_Kutschera_Ladar;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,6 +638,24 @@
 			buildConfigurations = (
 				443BAEA321930E240013E853 /* Debug */,
 				443BAEA421930E240013E853 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4450FFF32203ACDC001D5DF9 /* Build configuration list for PBXNativeTarget "GUI_Kutschera_LadarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4450FFF12203ACDC001D5DF9 /* Debug */,
+				4450FFF22203ACDC001D5DF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4450FFFF2203B59D001D5DF9 /* Build configuration list for PBXNativeTarget "GUI_Kutschera_LadarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				445000002203B59D001D5DF9 /* Debug */,
+				445000012203B59D001D5DF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

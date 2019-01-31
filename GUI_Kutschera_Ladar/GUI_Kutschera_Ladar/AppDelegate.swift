@@ -22,47 +22,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     notify()
     return true
   }
-  
+
   func application(_ application: UIApplication,
                    performFetchWithCompletionHandler completionHandler:
-    @escaping (UIBackgroundFetchResult) -> Void) {
-    // Check for new data.
-    // if let newData = fetchUpdates() {
-    //  completionHandler(.newData)
-    //}
-    
+                       @escaping (UIBackgroundFetchResult) -> Void) {
     notify()
     completionHandler(.noData)
   }
-  
+
   private func notify() {
     let center = UNUserNotificationCenter.current()
-    Calendar.current.
-    
+
     center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
       if granted {
-        print("Yay!")
-      } else {
-        print("D'oh")
+        let content = UNMutableNotificationContent()
+        content.title = "Hätti heute gewonnen tätti gespielt haben?"
+        content.body = "Die heutige Lottoziehung hat gerade stattgefunden. Lust zu sehen ob du was gewonnen hättest?"
+        content.categoryIdentifier = "customIdentifier"
+        content.userInfo = ["customData": "fizzbuzz"]
+        content.sound = UNNotificationSound.default
+
+        var dateComponents = DateComponents()
+        dateComponents.hour = 20
+        dateComponents.minute = 19
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+
+        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+        center.add(request)
       }
     }
 
-    print("did register!!!!!!")
-    let content = UNMutableNotificationContent()
-    content.title = "Hätti heute gewonnen tätti gespielt haben?"
-    content.body = "Die heutige Lottoziehung hat gerade stattgefunden. Lust zu sehen ob du was gewonnen hättest?"
-    content.categoryIdentifier = "customIdentifier"
-    content.userInfo = ["customData": "fizzbuzz"]
-    content.sound = UNNotificationSound.default
-    
-    var dateComponents = DateComponents()
-    dateComponents.hour = 20
-    dateComponents.minute = 19
-    let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-    
-    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-    center.add(request)
-  
   }
 
   func applicationWillResignActive(_ application: UIApplication) {
@@ -85,9 +74,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func applicationWillTerminate(_ application: UIApplication) {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-     self.saveContext()
+    self.saveContext()
   }
-  
+
   lazy var persistentContainer: NSPersistentContainer = {
     /*
      The persistent container for the application. This implementation
@@ -95,16 +84,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      application to it. This property is optional since there are legitimate
      error conditions that could cause the creation of the store to fail.
      */
-    
-    
+
+
     // SEE BELOW LINE OF CODE WHERE THE 'name' IS SET AS THE FILE NAME (SampleData) FOR THE CONTAINER
-    
+
     let container = NSPersistentContainer(name: "Model")
     container.loadPersistentStores(completionHandler: { (storeDescription, error) in
       if let error = error as NSError? {
         // Replace this implementation with code to handle the error appropriately.
         // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        
+
         /*
          Typical reasons for an error here include:
          * The parent directory does not exist, cannot be created, or disallows writing.
@@ -118,10 +107,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     })
     return container
   }()
-  
+
   // MARK: - Core Data Saving support
-  
-  func saveContext () {
+
+  func saveContext() {
     let context = persistentContainer.viewContext
     if context.hasChanges {
       do {
