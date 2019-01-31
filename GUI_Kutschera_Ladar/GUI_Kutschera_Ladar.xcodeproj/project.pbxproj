@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		187AA12336DAC510E06C6610 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA23BB0AF4D261F7E363C /* SecondViewController.swift */; };
+		187AA12336DAC510E06C6610 /* LotteryLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA23BB0AF4D261F7E363C /* LotteryLocationsViewController.swift */; };
+		187AA2A4ADE9FCD52E465068 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AAABE10D69446556A078D /* DateExtensions.swift */; };
 		187AA493E2CB726B3752E871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187AAF0BC100B2F4C8CDCCF1 /* LaunchScreen.storyboard */; };
 		187AA533D8A71F8603D9FEDA /* CsvParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA79285A7FE7878A441BB /* CsvParser.swift */; };
-		187AA5CAE35FE4FA512BC5FA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AAC83CA6CEC76FBD13299 /* FirstViewController.swift */; };
+		187AA5CAE35FE4FA512BC5FA /* HaettiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AAC83CA6CEC76FBD13299 /* HaettiViewController.swift */; };
 		187AA9581081E9C4CFC29F6A /* LottoParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA25A19A2B6ACE96F74E8 /* LottoParser.swift */; };
 		187AA9B15FC8A4D386614DA2 /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AAED23944D7D29E3172F8 /* LoseViewController.swift */; };
 		187AAA3075CBCDFEED76DE8A /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AAE620D5E948FE016DBD6 /* StringExtensions.swift */; };
@@ -19,6 +20,7 @@
 		187AAC5AD3E6D8D661C3C4F9 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187AA08737F0C5B69C8F1F83 /* WinViewController.swift */; };
 		443BAE9221930E230013E853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BAE9121930E230013E853 /* AppDelegate.swift */; };
 		443BAE9B21930E240013E853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443BAE9A21930E240013E853 /* Assets.xcassets */; };
+		4450FFE521FFB510001D5DF9 /* ReceivingOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4450FFE421FFB510001D5DF9 /* ReceivingOffice.swift */; };
 		4471219621957A460026A951 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4471219521957A460026A951 /* CoreData.framework */; };
 		4471219921957A7D0026A951 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4471219721957A7D0026A951 /* Model.xcdatamodeld */; };
 		4471219B21957BB70026A951 /* LottoDrawExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4471219A21957BB70026A951 /* LottoDrawExtensions.swift */; };
@@ -28,11 +30,12 @@
 /* Begin PBXFileReference section */
 		187AA08737F0C5B69C8F1F83 /* WinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
 		187AA234EA4480DDF1C2B8E5 /* LottoDraw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottoDraw.swift; sourceTree = "<group>"; };
-		187AA23BB0AF4D261F7E363C /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		187AA23BB0AF4D261F7E363C /* LotteryLocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotteryLocationsViewController.swift; sourceTree = "<group>"; };
 		187AA25A19A2B6ACE96F74E8 /* LottoParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottoParser.swift; sourceTree = "<group>"; };
 		187AA64D73C107C793A5C965 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		187AA79285A7FE7878A441BB /* CsvParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CsvParser.swift; sourceTree = "<group>"; };
-		187AAC83CA6CEC76FBD13299 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		187AAABE10D69446556A078D /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		187AAC83CA6CEC76FBD13299 /* HaettiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaettiViewController.swift; sourceTree = "<group>"; };
 		187AAE620D5E948FE016DBD6 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		187AAED23944D7D29E3172F8 /* LoseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 		187AAF0BC100B2F4C8CDCCF1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		443BAE9121930E230013E853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		443BAE9A21930E240013E853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443BAE9F21930E240013E853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4450FFE421FFB510001D5DF9 /* ReceivingOffice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivingOffice.swift; sourceTree = "<group>"; };
 		4471219521957A460026A951 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4471219821957A7D0026A951 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		4471219A21957BB70026A951 /* LottoDrawExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoDrawExtensions.swift; sourceTree = "<group>"; };
@@ -62,8 +66,8 @@
 		187AA0062F786C982C11850B /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				187AA23BB0AF4D261F7E363C /* SecondViewController.swift */,
-				187AAC83CA6CEC76FBD13299 /* FirstViewController.swift */,
+				187AA23BB0AF4D261F7E363C /* LotteryLocationsViewController.swift */,
+				187AAC83CA6CEC76FBD13299 /* HaettiViewController.swift */,
 				187AAED23944D7D29E3172F8 /* LoseViewController.swift */,
 				187AA08737F0C5B69C8F1F83 /* WinViewController.swift */,
 			);
@@ -84,6 +88,7 @@
 			children = (
 				187AA234EA4480DDF1C2B8E5 /* LottoDraw.swift */,
 				4471219C21957CB90026A951 /* LottoDrawMatch.swift */,
+				4450FFE421FFB510001D5DF9 /* ReceivingOffice.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 			children = (
 				187AAE620D5E948FE016DBD6 /* StringExtensions.swift */,
 				4471219A21957BB70026A951 /* LottoDrawExtensions.swift */,
+				187AAABE10D69446556A078D /* DateExtensions.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -222,15 +228,17 @@
 				4471219D21957CB90026A951 /* LottoDrawMatch.swift in Sources */,
 				4471219B21957BB70026A951 /* LottoDrawExtensions.swift in Sources */,
 				443BAE9221930E230013E853 /* AppDelegate.swift in Sources */,
-				187AA12336DAC510E06C6610 /* SecondViewController.swift in Sources */,
-				187AA5CAE35FE4FA512BC5FA /* FirstViewController.swift in Sources */,
+				187AA12336DAC510E06C6610 /* LotteryLocationsViewController.swift in Sources */,
+				187AA5CAE35FE4FA512BC5FA /* HaettiViewController.swift in Sources */,
 				187AA9B15FC8A4D386614DA2 /* LoseViewController.swift in Sources */,
 				187AAC5AD3E6D8D661C3C4F9 /* WinViewController.swift in Sources */,
 				187AA533D8A71F8603D9FEDA /* CsvParser.swift in Sources */,
+				4450FFE521FFB510001D5DF9 /* ReceivingOffice.swift in Sources */,
 				187AA9581081E9C4CFC29F6A /* LottoParser.swift in Sources */,
 				4471219921957A7D0026A951 /* Model.xcdatamodeld in Sources */,
 				187AABCC17186FE7BD1A56F5 /* LottoDraw.swift in Sources */,
 				187AAA3075CBCDFEED76DE8A /* StringExtensions.swift in Sources */,
+				187AA2A4ADE9FCD52E465068 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     UIApplication.shared.setMinimumBackgroundFetchInterval(10)
+    notify()
     return true
   }
   
@@ -36,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   private func notify() {
     let center = UNUserNotificationCenter.current()
+    Calendar.current.
     
     center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
       if granted {
@@ -44,17 +46,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("D'oh")
       }
     }
-    
+
+    print("did register!!!!!!")
     let content = UNMutableNotificationContent()
-    content.title = "Title goes here"
-    content.body = "Main text goes here"
+    content.title = "Hätti heute gewonnen tätti gespielt haben?"
+    content.body = "Die heutige Lottoziehung hat gerade stattgefunden. Lust zu sehen ob du was gewonnen hättest?"
     content.categoryIdentifier = "customIdentifier"
     content.userInfo = ["customData": "fizzbuzz"]
     content.sound = UNNotificationSound.default
     
     var dateComponents = DateComponents()
-    dateComponents.hour = 10
-    dateComponents.minute = 30
+    dateComponents.hour = 20
+    dateComponents.minute = 19
     let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
     
     let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)

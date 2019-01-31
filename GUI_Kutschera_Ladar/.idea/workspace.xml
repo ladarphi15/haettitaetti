@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f2cb1de-bb1c-4898-ad93-adbaada9921d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Model.xcdatamodeld/Model.xcdatamodel/contents" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/LottoDrawExtensions.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDrawMatch.swift" afterDir="false" />
+    <list default="true" id="4f2cb1de-bb1c-4898-ad93-adbaada9921d" name="Default Changelist" comment="first working project prototype">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/DateExtensions.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/model/ReceivingOffice.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/FirstViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/FirstViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/WinViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/WinViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar.xcodeproj/project.xcworkspace/xcuserdata/edi.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar.xcodeproj/project.xcworkspace/xcuserdata/edi.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Model.xcdatamodeld/Model.xcdatamodel/contents" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/Model.xcdatamodeld/Model.xcdatamodel/contents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/FirstViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/HaettiViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/SecondViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/LotteryLocationsViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/StringExtensions.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/StringExtensions.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/util/CsvParser.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/util/CsvParser.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/util/LottoParser.swift" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/util/LottoParser.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_Kutschera_Ladar/view/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_Kutschera_Ladar/view/Main.storyboard" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/../../../../../../../../Developer/Xcode/DerivedData/GUI_Kutschera_Ladar-hjoshjcidcyhaoggestznlvbbzeo/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,43 +36,56 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_1029C236-B806-40C2-87F9-237A957C6B20" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/HaettiViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Swift/Collection.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="715" column="16" selection-start-line="715" selection-start-column="16" selection-end-line="715" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/DateExtensions.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/FirstViewController.swift">
+        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/AppDelegate.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="197">
+              <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/Info.plist">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/util/CsvParser.swift">
+        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/UIKit.UIApplication/UIKit.UIApplication.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="297">
+              <caret line="235" column="14" selection-start-line="235" selection-start-column="14" selection-end-line="235" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/util/LottoParser.swift">
+        <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation/Foundation.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="2491" column="15" selection-start-line="2491" selection-start-column="15" selection-end-line="2491" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -69,17 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/StringExtensions.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../../../../Caches/AppCode2018.3/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Swift/String.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13286">
-              <caret line="511" column="16" selection-start-line="511" selection-start-column="16" selection-end-line="511" selection-end-column="16" />
+            <state relative-caret-position="371">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -90,10 +105,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/SecondViewController.swift">
+        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            <state relative-caret-position="224">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+              <folding>
+                <element signature="e#105#120#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/LotteryLocationsViewController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1091">
+              <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -105,10 +132,13 @@
       <find>------------------</find>
       <find>--------------------</find>
       <find>2017</find>
+      <find>position</find>
+      <find>2018</find>
+      <find>2019</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -117,21 +147,28 @@
         <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/util/LottoParser.h" />
         <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/util/LottoParser.swift" />
         <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/util/CsvParser.swift" />
-        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/StringExtensions.swift" />
-        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.swift" />
         <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/FirstViewController.swift" />
+        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/model/ReceivingOffice.swift" />
+        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/SecondViewController.swift" />
+        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.swift" />
+        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/DateExtensions.swift" />
+        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/StringExtensions.swift" />
+        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/HaettiViewController.swift" />
+        <option value="$PROJECT_DIR$/GUI_Kutschera_Ladar/AppDelegate.swift" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
@@ -179,7 +216,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,10 +236,11 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="GUI_Kutschera_Ladar" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GUI_Kutschera_Ladar" TARGET_NAME="GUI_Kutschera_Ladar" CONFIG_NAME="Debug" SCHEME_NAME="GUI_Kutschera_Ladar" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="GUI_Kutschera_Ladar" RUN_TARGET_NAME="GUI_Kutschera_Ladar" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+    <configuration name="GUI_Kutschera_Ladar" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GUI_Kutschera_Ladar" TARGET_NAME="GUI_Kutschera_Ladar" CONFIG_NAME="Debug" SCHEME_NAME="GUI_Kutschera_Ladar" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="../../../../../../../../../../../Desktop/something.gpx" LOCATION_SCENARIO_TYPE="0" RUN_TARGET_PROJECT_NAME="GUI_Kutschera_Ladar" RUN_TARGET_NAME="GUI_Kutschera_Ladar" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
+      <embedded_app_extension_list />
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -222,6 +259,7 @@
       <workItem from="1541669218018" duration="3377000" />
       <workItem from="1541684988549" duration="3986000" />
       <workItem from="1541752059774" duration="818000" />
+      <workItem from="1548713926605" duration="30088000" />
     </task>
     <task id="LOCAL-00001" summary="first working project prototype">
       <created>1541686005690</created>
@@ -234,19 +272,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8181000" />
+    <option name="totallyTimeSpent" value="38269000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17582418" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1773163" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298122" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19489796" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39906102" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3990099" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.28613862" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -254,7 +293,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3298122" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32871288" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -270,7 +309,29 @@
     <option name="LAST_COMMIT_MESSAGE" value="first working project prototype" />
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="breakpointCondition">
+      <expression>
+        <expression-string>year == 2018</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>context.delete(&lt;#T##object: NSManagedObject##CoreData.NSManagedObject#&gt;)</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self</expression-string>
+        <language-id>Swift</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>String(data: data, encoding: String.Encoding.ascii)</expression-string>
         <language-id>Swift</language-id>
@@ -286,6 +347,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.m" />
     <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.h" />
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/Info.plist">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/util/CsvParser.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -300,20 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/StringExtensions.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../../../../../Caches/AppCode2018.3/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Swift/String.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13286">
@@ -321,23 +371,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/LoseViewController.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/SecondViewController.swift">
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/CoreLocation.CLLocationManagerDelegate/CoreLocation.CLLocationManagerDelegate.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state relative-caret-position="780">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/Info.plist">
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Swift/Math.Floating.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="244" column="14" selection-start-line="244" selection-start-column="14" selection-end-line="244" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Swift/Misc.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="322" column="11" selection-start-line="322" selection-start-column="11" selection-end-line="322" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDrawMatch.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/model/ReceivingOffice.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/LotteryLocationsViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1091">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/DateExtensions.m">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/FirstViewController.swift">
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/DateExtensions.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="234">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Swift/Collection.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="715" column="16" selection-start-line="715" selection-start-column="16" selection-end-line="715" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/StringExtensions.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/model/LottoDraw.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="e#105#120#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/HaettiViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/controller/LoseViewController.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/extensions/DateExtensions.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/UIKit.UIApplication/UIKit.UIApplication.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="235" column="14" selection-start-line="235" selection-start-column="14" selection-end-line="235" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/10B61/4.2.1/arm64/iphoneos12.1/Foundation/Foundation.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="2491" column="15" selection-start-line="2491" selection-start-column="15" selection-end-line="2491" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GUI_Kutschera_Ladar/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
         </state>
       </provider>
     </entry>
