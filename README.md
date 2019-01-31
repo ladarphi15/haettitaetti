@@ -5,6 +5,6 @@ Dabei wird nicht die API der Österreichischen Lotterien verwendet, da diese led
 
 ###Screenshots der Applikation 
 
-![GitHub Logo](/doc/screenshot_mainpage.png) ![GitHub Logo](/doc/screenshot_win.png)
+![Main Page](/doc/screenshot_mainpage.png =250px) ![Win Page](/doc/screenshot_won.png =250px)
 
-![GitHub Logo](/doc/screenshot_map.png)
+![Map Page Logo](/doc/screenshot_map.png =250px)
