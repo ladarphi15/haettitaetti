@@ -31,12 +31,12 @@ class GUI_Kutschera_LadarUITests: XCTestCase {
   }
 
   func testLoseScreenIsShown() {
-    app.pickerWheels.allElementsBoundByIndex[0].adjust(toPickerWheelValue: "3")
-    app.pickerWheels.allElementsBoundByIndex[1].adjust(toPickerWheelValue: "15")
-    app.pickerWheels.allElementsBoundByIndex[2].adjust(toPickerWheelValue: "23")
-    app.pickerWheels.allElementsBoundByIndex[3].adjust(toPickerWheelValue: "41")
-    app.pickerWheels.allElementsBoundByIndex[4].adjust(toPickerWheelValue: "22")
-    app.pickerWheels.allElementsBoundByIndex[5].adjust(toPickerWheelValue: "11")
+    app.pickerWheels.allElementsBoundByIndex[0].adjust(toPickerWheelValue: "19")
+    app.pickerWheels.allElementsBoundByIndex[1].adjust(toPickerWheelValue: "2")
+    app.pickerWheels.allElementsBoundByIndex[2].adjust(toPickerWheelValue: "10")
+    app.pickerWheels.allElementsBoundByIndex[3].adjust(toPickerWheelValue: "12")
+    app.pickerWheels.allElementsBoundByIndex[4].adjust(toPickerWheelValue: "14")
+    app.pickerWheels.allElementsBoundByIndex[5].adjust(toPickerWheelValue: "19")
     app.buttons["haettiButton"].tap()
 
     XCTAssert(app.staticTexts["Leider verloren :("].isHittable)
