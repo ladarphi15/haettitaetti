@@ -6,6 +6,6 @@ Dabei wird nicht die API der Österreichischen Lotterien verwendet, da diese led
 ###Screenshots der Applikation 
 _realtive size of screenhots does not work_
 
-![Main Page](/doc/screenshot_mainpage.png) ![Win Page](/doc/screenshot_won.png )
+![Main Page](/doc/screenshot_main.png) ![Win Page](/doc/screenshot_won.png )
 
 ![Map Page Logo](/doc/screenshot_map.png)
